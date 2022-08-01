@@ -14,7 +14,7 @@ class BinTree {
     }
 
     insert(newNode) {
-        // Если корень дерева пуст
+        // Якщо корінь дерева є пустим
         if (this.root == null) {
             this.root = newNode;
             return;
@@ -37,7 +37,7 @@ class BinTree {
                 }
             }
         }
-        // Ищем куда вставить, стартуем с корня
+        // Шукаємо куди вставити, починаємо з кореня
         _insert(this.root);
     }
 
@@ -58,7 +58,7 @@ class BinTree {
     }
 
     deleteByNumber(number) {
-        // Для удаления элемента с одним, или нулем, наследников
+        // Для видалення елементу з одним, або нулем, нащадків
         function deleteOneOrNoChildElem(node) {
             let newNode = null;
             if (node.leftChild)
@@ -76,7 +76,7 @@ class BinTree {
                 }
             }
         }
-        // Для удаления элемента с двумя наследниками
+        // Для видалення елементу з двума нащадками
         function deleteTwoChildElem(node) {
 
             let result = node.leftChild;
@@ -123,7 +123,7 @@ let binTree = new BinTree();
 
 /*
                 ilya
-            lera       --- удаляем этот
+            lera       --- видаляємо оцей.
     yaroslav    maks
 sasha
 */
